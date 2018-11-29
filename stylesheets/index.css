@@ -1,5 +1,5 @@
 html {
-    box-sizing: border-bo; 
+    box-sizing: border-box; 
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -17,29 +17,104 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+.divider {
+    background-color: white;
+    height: 150px;
+}
 
-/* ===== =====  HOME-PAGE  ===== ===== */
-.home {
-    height: 100%;
-    width: 100%;
-    background-color: lightcyan;
-}
-.homeNav {
-    width: 100%;
-}
+/* ===== =====  LADNING-PAGE  ===== ===== */
 .navBar {
-    height: 70px;
+    height: 50px;
     background-color: white;
     display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 .navTitle {
     display: flex;
     align-items: center;
+    width: 650px;
 }
 .title {
     text-decoration: none;
-    margin: auto 15px;
+    margin: auto 50px;
+    letter-spacing: 1px;
 }
-.h1 {
-    margin: 0;
+h1 {
+    margin: auto;
+}
+.navLinks {
+    justify-content: center;
+    justify-content: space-around;
+    width: 650px;
+}
+.link {
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.homeContainer {
+    background-color:lightcyan;
+    height: inherit;
+    display: flex; 
+}
+.homeBody {
+    outline: 1px solid black;
+    height: 300px;
+    width: 500px;
+}
+
+/* ===== =====  RECENT-PROJECTS  ===== ===== */
+.recentProjects {
+    background-color: lightcyan;
+    height: inherit;
+
+}
+
+
+/* ===== =====  CONTACT  ===== ===== */
+.contactContainer {
+    background-color: lightcyan;
+    height: inherit;
+    
+    flex-direction: column;
+}
+.contactIcons {
+    background-color: white;
+    height: 70px;
+    width: 600px;
+    margin-bottom: 40px;
+}
+.emailForm {
+    background-color: white;
+    height: 350px;
+    width: 600px;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.formName {
+    outline: 1px solid black;
+    /* display: flex; */
+}
+.name{
+    width: 250px;
+    height: 25px;
+}
+.form1 {
+    margin-bottom: 15px;
+}
+label {
+    margin-bottom: 10px;
+    display: flex;
+}
+/* .form-row {
+    width: 580px;
+} */
+.form{
+    width: 550px;
+    height: 30px;
+}
+.placeholder {
+    margin-bottom: 15px;
 }

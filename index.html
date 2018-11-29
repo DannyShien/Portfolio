@@ -9,26 +9,77 @@
 </head>
 <body>
     <!-- ===== =====  HOME-PAGE  ===== ===== -->
-    <div class='home'>
-        <div class='homenav'>
-            <div class='navBar'>
-                <div class='navTitle'>
-                    <a class='title' href="#"><h1>Stanley Chen</h1></a>
+    <section class='navBar'>
+        <div class='navTitle'>
+            <a class='title' href="#top">
+                <h1>Stanley Chen</h1>
+            </a>
+        </div>
+        <div class='navLinks center'>
+            <a class='link' href="#">About</a>
+            <a class='link' href="#RP">Recent Projects</a>
+            <a class='link' href="#">Skills</a>
+            <a class='link' href="#contacts">Contacts</a>
+        </div>
+    </section>
+    <section class='homeContainer center' id='top'>
+        <div class='homeBody center'>
+            <h2>Yo, I'm Stanley
+                Full-Stack Developer
+            </h2>
+        </div>
+    </section>
+
+    <section class='divider'></section>
+
+    <section class='recentProjects' id='RP'>
+
+    </section>
+
+    <section class='divider'></section>
+
+    <section class='contactContainer center' id='contacts'>
+        <div class='contactIcons'>
+
+        </div>
+        <div class='emailForm'>
+            <form action="https://formspree.io/dannyshien@gmail.com" method="POST">
+                <div class='formName'>
+                    <div class='form1'>
+                        <label>Name
+                            <div class='formRow'>
+                                <input class='name' type="text" name="name">
+                                <input class='name' type="text" name="name">
+                            </div>
+                        </label>
+                    </div>
+                    <!-- <div class='placeholder'>
+                        <label>
+                            <div class='formRow'>
+                            </div>
+                        </label>
+                    </div> -->
                 </div>
-            </div>
+
+                <div class='placeholder'>
+                    <label>Email Address
+                        <div class='form-row'>
+                            <input class='form' type="email" name="_replyto">
+                        </div>
+                    </label>
+                </div>
+                <div class='placeholder'>
+                    <label>Subject
+                        <div class='form-row'>
+                            <input class='form' type="text" name="_subject">
+                        </div>
+                    </label>
+                </div>
+                <input class='btn' type="submit" value="Send">
+            </form>
         </div>
-        <div class='homeContainer'>
-            <div class='homeBody'>
-
-            </div>
-        </div>
-    </div>
-
-
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    </section>
+        
 
     
     <script src ='scripts/index.js'></script>

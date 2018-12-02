@@ -21,7 +21,18 @@ html, body {
     background-color: white;
     height: 150px;
 }
-
+.pageTitle {
+    height: 70px;
+    width: 100%;
+    /* margin-bottom: 30px; */
+    display: flex;
+}
+.main {
+    height: inherit;
+}
+/* :hover {
+    background-color: lightcoral;
+} */
 /* ===== =====  LADNING-PAGE  ===== ===== */
 .navBar {
     height: 50px;
@@ -58,6 +69,7 @@ h1 {
     background-color:lightcyan;
     height: inherit;
     display: flex; 
+    height: 100%;
 }
 .homeBody {
     outline: 1px solid black;
@@ -68,28 +80,71 @@ h1 {
 /* ===== =====  RECENT-PROJECTS  ===== ===== */
 .recentProjects {
     background-color: lightcyan;
-    height: inherit;
-
+    padding: 30px 5px;;
 }
-
+.projectContainer {
+    background-color: lightgoldenrodyellow;
+    /* background-color: lightcyan; */
+    width: 1000px;
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projectInfo {
+    height: 400px;
+    width: 30%;
+    flex-direction: column;
+    margin: 10px 15px;
+    padding: 20px 5px;
+    outline: 1px solid black;
+}
+.projectTitle{
+    flex-direction: column;
+    margin: 0;
+}
+.tech {
+    margin: 20px auto;
+    text-align: center;
+}
+.pThumbnail img {
+    flex-direction: column;
+    /* background-color: lightcyan; */
+    height: inherit;
+    align-items: center;
+    box-shadow: 5px 5px 5px gray;
+    border-style: groove;
+    /* border-color: black; */
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+.btn {
+    border-radius: 10%;
+    height: 30px;
+    width: 70px;
+    /* font-weight: 900; */
+    border: 2px solid #35272d;
+    color: #35272d;
+    /* background-color: #d8d8d8; */
+}
 
 /* ===== =====  CONTACT  ===== ===== */
 .contactContainer {
     background-color: lightcyan;
     height: inherit;
-    
     flex-direction: column;
 }
 .contactIcons {
     background-color: white;
     height: 70px;
     width: 600px;
-    margin-bottom: 40px;
 }
 .emailForm {
     background-color: white;
     height: 350px;
     width: 600px;
+    margin-top: 40px;
     /* display: flex; */
     /* flex-direction: row; */
 }

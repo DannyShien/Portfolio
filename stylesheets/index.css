@@ -25,7 +25,8 @@ html, body {
 .pageTitle {
     height: 70px;
     width: 100%;
-    display: flex;
+    display: flex; 
+    background-color: aliceblue;
 }
 h1 {
     margin: O;
@@ -135,6 +136,33 @@ img {
     /* font-weight: 900; */
     color: #35272d;
     /* background-color: #d8d8d8; */
+}
+
+/* ===== =====  SKILLS  ===== ===== */
+.skills {
+    background-color: lightcyan;
+    height: 100%;
+}
+.skillsContainer {
+    /* background-color: white; */
+    /* outline: 1px solid black; */
+    height: 500px; 
+    width: 60%;
+}
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 430px;
+}
+.skillsIcon {
+    /* background-color: lightgoldenrodyellow; */
+    height: 100px;
+    justify-content: space-around;
+}
+.imgIcons {
+    height: 60px;
+    width: 50px;
 }
 
 /* ===== =====  CONTACT  ===== ===== */

@@ -127,48 +127,52 @@
         <section class='divider'></section>
 
         <!-- ===== =====  CONTACTS  ===== ===== -->
-        <section class='contactContainer center' id='contacts'>
-            <div class='pageTitle center'>
-                <h1>contacts</h1>
-            </div>
-            <div class='contactIcons'>
-
-            </div>
-            <div class='emailForm'>
-                <form action="https://formspree.io/dannyshien@gmail.com" method="POST">
-                    <div class='formName'>
-                        <div class='form1'>
-                            <label>Name
-                                <div class='formRow'>
-                                    <input class='name' type="text" name="name">
-                                    <input class='name' type="text" name="name">
+        <section class='contacts center' id='contacts'>
+            <div class='contactsContainer'>
+                <div class='pageTitle center'>
+                    <h1>contacts</h1>
+                </div>
+                <div class='contactIcons '>
+                    <img class='imgIcons' src="./images/github.png" alt="GitHub">
+                    <img class='imgIcons' src="./images/linkedin.png" alt="LinkedIn">
+                    <img class='imgIcons' src="./images/resume.png" alt="Resume">
+                </div>
+                <div class='emailForm'>
+                    <form action="https://formspree.io/dannyshien@gmail.com" method="POST">
+                        <div class='formName'>
+                            <div class='form1'>
+                                <label>Name
+                                    <div class='formRow'>
+                                        <input class='name' type="text" name="name">
+                                        <input class='name' type="text" name="name">
+                                    </div>
+                                </label>
+                            </div>
+                            <!-- <div class='placeholder'>
+                                <label>
+                                    <div class='formRow'>
+                                    </div>
+                                </label>
+                            </div> -->
+                        </div>
+                        
+                        <div class='placeholder'>
+                            <label>Email Address
+                                <div class='form-row'>
+                                    <input class='form' type="email" name="_replyto">
                                 </div>
                             </label>
                         </div>
-                        <!-- <div class='placeholder'>
-                            <label>
-                                <div class='formRow'>
+                        <div class='placeholder'>
+                            <label>Subject
+                                <div class='form-row'>
+                                    <input class='form' type="text" name="_subject">
                                 </div>
                             </label>
-                        </div> -->
-                    </div>
-
-                    <div class='placeholder'>
-                        <label>Email Address
-                            <div class='form-row'>
-                                <input class='form' type="email" name="_replyto">
-                            </div>
-                        </label>
-                    </div>
-                    <div class='placeholder'>
-                        <label>Subject
-                            <div class='form-row'>
-                                <input class='form' type="text" name="_subject">
-                            </div>
-                        </label>
-                    </div>
-                    <input class='btn' type="submit" value="Send">
-                </form>
+                        </div>
+                        <input class='btn' type="submit" value="Send">
+                    </form>
+                </div>
             </div>
         </section>
     </div>

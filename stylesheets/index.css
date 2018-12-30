@@ -19,9 +19,15 @@ html {
 }
 
 /*  ===== =====  HEADING  ===== ===== */
-h1 {
+h1, h2 {
     color: white;
     font-weight: 300;
+}
+h2 a {
+    color: white;
+    font-size: 90%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 /* ===== ====  HEADER  ===== ===== */
@@ -36,16 +42,15 @@ header {
     width: auto; 
     float: left;
     margin-left: 30px;
-    color: white;
     text-decoration: none;
     text-transform: lowercase;
-    font-size: 70%;
-    margin-top: -8px;
+    margin-top: 15px;
 }
 .navbar {
     float: right;
     list-style: none;
     margin-right: 20px;
+    margin-top: 20px;
 }
 .navbar li {
     display: inline; 
@@ -69,5 +74,26 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 500px;
     transform: translate(-45%, -50%);
+    text-align: center;
+}
+
+/* ===== =====  BIO-SECTION  ===== ===== */
+.bio-section {
+    background-color: rgb(240, 240, 240);
+}
+.profile-pic {
+    width: 60%;
+}
+.bio-box:first-child {
+    /* text-align: right; */
+    float: left;
+}
+.bio-box:last-child {
+    /* text-align: right; */
+    float: right;
+}
+.bio-box p {
+    float: right;
 }

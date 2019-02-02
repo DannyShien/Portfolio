@@ -51,7 +51,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/Dummyimage1.png);
     background-size: cover;
     background-position: center;
-    background-position: fixed;
+    background-attachment: fixed;
     height: 100vh;
 }
 .navbar {
@@ -92,21 +92,17 @@ p {
 }
 
 /* ===== =====  BIO  ===== ===== */
-.section-bio {
-    /* display: flex; 
-    flex-direction: column;
-    justify-content: space-between; */
-
+/* .section-bio {
     height: 100vh;
-}
+} */
 .bio-content {
-    display: flex; 
+    display: flex;
     margin: 0 30px;
-    /* height: 400px; */
+    height: 400px;
 }
-.bio-box:first-child {
+/* .bio-box:first-child {
 
-}
+} */
 .bio-box:last-child {
     font-size: 70%;
     line-height: 190%; 
@@ -119,5 +115,25 @@ p {
     height: auto;
     /* border-radius: 25%; */
 }
+
+/* ===== =====  RECENT-PROJECTS  ===== ===== */
+.section-projects {
+
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project-box {
+    text-align: center;
+}
+.project-box img {
+    width: 100%; 
+    height: auto; 
+}
+h3 {
+
+}
+
 
 

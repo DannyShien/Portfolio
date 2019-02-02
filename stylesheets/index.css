@@ -36,15 +36,19 @@ li {
 .title {
     display: flex; 
     justify-content: center;    
+    padding-bottom: 30px;
 }
 .center {
     display: flex; 
     justify-content: center;
     align-items: center;
 }
+section {
+    padding: 30px 0;
+}
 /*  ===== =====  HEADER  ===== ===== */
 header {
-    background-image: url(/images/Dummyimage1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/Dummyimage1.png);
     background-size: cover;
     background-position: center;
     background-position: fixed;
@@ -95,21 +99,25 @@ p {
 
     height: 100vh;
 }
-/* }
-.section-bio h2 {
-    text-align: center; 
-}  */
 .bio-content {
     display: flex; 
     margin: 0 30px;
+    /* height: 400px; */
 }
-.bio-pic img{
+.bio-box:first-child {
+
+}
+.bio-box:last-child {
+    font-size: 70%;
+    line-height: 190%; 
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center; 
+}
+.pic {
     max-width: 70%;
     height: auto;
-    border-radius: 50%;
+    /* border-radius: 25%; */
 }
-.bio-text {
-    text-align: center; 
-    font-size: 80%;
-    line-height: 140%; 
-}
+
+

@@ -11,31 +11,57 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+/* ===== =====  RE-USABLE STYLING  ===== ===== */
 a:link, 
 a:visited {
-    color: black;
+    color: white;
     text-decoration: none;
     padding-bottom: 5px;
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
     transition: border-bottom .2s, color 0.2s;
 }
 a:hover, 
 a:active {
-    border-bottom: 3px solid red;
+    color: gray;
+    border-bottom: 2px solid gray;
 }
 li {
     list-style-type: none;
     font-size: 80%;
     font-weight: 400;
 }
-
-/*  ===== =====  NAVBAR  ===== ===== */
-.nav-name {
+.links {
+    padding-right: 15px;
+}
+.title {
+    display: flex; 
+    justify-content: center;    
+}
+.center {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+/*  ===== =====  HEADER  ===== ===== */
+header {
+    background-image: url(/images/Dummyimage1.png);
+    background-size: cover;
+    background-position: center;
+    background-position: fixed;
+    height: 100vh;
+}
+.navbar {
     height: 60px; 
-    outline: 2px solid red;
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    align-items: baseline;
+
+    background-color: rgb(211, 211, 211, 0.7);
+}
+h1 {
+    font-size: 120%;
+    font-weight: 400;
 }
 .name-title {
     margin-left: 15px; 
@@ -44,6 +70,46 @@ li {
     display: flex;
     margin-right: 10px; 
 }
-.links {
-    padding-right: 15px;
+.hero-text {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    height: 90%;
+}
+h2 {
+    font-size: 220%;
+    font-weight: 400; 
+}
+p {
+    font-size: 150%;
+    font-weight: 400;
+}
+
+/* ===== =====  BIO  ===== ===== */
+.section-bio {
+    /* display: flex; 
+    flex-direction: column;
+    justify-content: space-between; */
+
+    height: 100vh;
+}
+/* }
+.section-bio h2 {
+    text-align: center; 
+}  */
+.bio-content {
+    display: flex; 
+    margin: 0 30px;
+}
+.bio-pic img{
+    max-width: 70%;
+    height: auto;
+    border-radius: 50%;
+}
+.bio-text {
+    text-align: center; 
+    font-size: 80%;
+    line-height: 140%; 
 }

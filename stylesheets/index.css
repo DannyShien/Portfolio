@@ -155,24 +155,30 @@ h3 {
 }
 .icon-container {
     display: flex; 
-    flex-direction: column;
-    align-items: center;    
+    /* align-items: center;     */
+    /* justify-content: space;  */
 }
 .icon-box {
     display: flex;
-    justify-content: space-around; 
-    width: 100vh;
-    height: 80px; 
+    flex-direction: column;
+    align-items: center; 
+    width: 10%;
     margin: 20px auto; 
+    padding: 5px;
+    border-radius: 25%;
+    border: 2px solid black;
 }
 .icon-box img{
     /* background-color: white; */
     padding: 3px;
-    width: 78px; 
-    border-radius: 25%;
-    /* border: 2px solid black; */
+    width: 60px;
+
 }
-img:hover {
+.icon-box p {
+    font-size: 80%;
+    font-weight: 400;
+}
+.icon-box:hover {
     transform: translateY(-1px);
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5); 
 }

@@ -15,7 +15,7 @@
         <nav class='navbar'>
             <h1><a class='name-title' href="#top"><!--Stanley Chen--></a></h1>
             <ul class='nav-link'>
-                <li class='links'><a href="#bio">Bio</a></li>
+                <li class='links'><a href="#bio">About</a></li>
                 <li class='links'><a href="#rp">Recent Projects</a></li>
                 <li class='links'><a href="#skills">Skills</a></li>
                 <li class='links'><a href="#contacts">Contacts</a></li>
@@ -27,21 +27,21 @@
         </div>
     </header>
 
-    <section class='section-bio' id='bio'>
+    <section class='section-about' id='about'>
         <div class='title'>
             <h2>About Me</h2>
         </div>
-        <div class='bio-content'>
-            <div class='bio-box center'>
-                <img src="/images/Dummyimage3.png" alt="Picture of me" class='pic'>
+        <div class='about-content'>
+            <div class='about-box center'>
+                <img src="/images/Dummyimage3.png" alt="Picture of me">
             </div>
-            <div class='bio-box center'>
+            <div class='about-box center'>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam atque, mollitia ut voluptates commodi officia veritatis animi voluptate voluptatum quod fugiat quos vel omnis aliquid ratione beatae, delectus magni sapiente.</p>
             </div>
         </div>
     </section>
 
-    <section class='section-skills'>
+    <!-- <section class='section-tech'>
         <div class='title'>
             <h2>Technologies</h2>
         </div>
@@ -79,7 +79,7 @@
                 <p>Python</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- <section class='section-projects' id='rp'>
         <div class='title'>
@@ -105,6 +105,37 @@
         </div>
     </section> -->
    
+    <section class='section-contact'>
+        <div class='title'>
+            <h2>I'm happy to hear from you</h2>
+        </div>
+        <!-- <h3>Holler at me if you have any questions, comments or just want to connect! </h3> -->
+        <div class='contact-container'>
+            <div class='icon-box'>
+                <img src="/images/github.svg" alt="GitHub account">
+                <p>GitHub</p>
+            </div>
+            <div class='icon-box'>
+                <img src="/images/linkedin.svg" alt="LinkedIn account">
+                <p>LinkedIn</p>
+            </div>
+            <div class='icon-box'>
+                <img src="/images/file-download.svg " alt="Download resume">
+                <p>Resume</p>
+            </div>
+        </div>
+        <div class='email-form'>
+            <form action="https://formspree.io/dannyshien@gmail.com" method='POST'>
+                <div class='form'>
+                    <input type="text" name='name' placeholder="Name">
+                    <input type="email" name='email' placeholder='Email'>
+                    <textarea name="message" placeholder='Message'></textarea>
+                </div>
+                <input type="submit" value='Send Message'>
+            </form>
+        </div>
+    </section>
+
 
 </body>
 </html>
@@ -114,83 +145,6 @@
 
 
 <!--
-    ===== =====  RECENT-PROJECTS  ===== ===== 
-    <section >
-        <div class='projectContainer center'>
-            <div class='pageTitle center'>
-                <h1>recent projects</h1>
-            </div>
-            <div class='projectInfo center'>
-                <p class='projectTitle center'>aerol plane
-                    <br>
-                    <span class=tech>
-                        JavaScript, APIs, HTML5, CSS3
-                    </span>
-                </p>
-                <div class='pThumbnail'>
-                    <img src="./images/AreolPlane.png" alt="Areol Plane Front-End Project">
-                </div>
-                <br>
-                <button class='btn'><a href="#" class='btn' target="_blank">repo</a></button>
-            </div>
-            <div class='projectInfo center'>
-                <p class='projectTitle center'>GeoMindr
-                    <br>
-                    <span class=tech>
-                        Node, PostgreSQL, Express, HTML5, CSS3
-                    </span>
-                    </p>
-                <div class='pThumbnail'>
-                    <img src="./images/GeoMindr.png" alt="Areol Plane Front-End Project">
-                </div>
-                <br>
-                <button class='btn'><a href="#" class='btn' target="_blank">repo</a></button>
-            </div>    
-            <div class='projectInfo center'>
-                <p class='projectTitle center'>aerol plane
-                    <br>
-                    <span class=tech>
-                        JavaScript, Google Maps API, Weather API, Flight Tracker API, HTML5, CSS3
-                    </span>
-                    </p>
-                <div class='pThumbnail'>
-                    <img src="./images/GeoMindr.png" alt="Areol Plane Front-End Project">
-                </div>
-                <br>
-                <button class='btn'><a href="#" class='btn' target="_blank">repo</a></button>
-            </div>
-            <div class='projectInfo center'>
-                <p class='projectTitle center'>aerol plane
-                    <br>
-                    <span class=tech>
-                        JavaScript, Google Maps API, Weather API, Flight Tracker API, HTML5, CSS3
-                    </span>
-                </p>
-                <div class='pThumbnail'>
-                    <img src="./images/GeoMindr.png" alt="Areol Plane Front-End Project">
-                </div>
-                <br>
-                <button class='btn'><a href="#" class='btn' target="_blank">repo</a></button>
-            </div>
-        </div>
-    </section>
-
-
-    
-
-    <section class='divider'></section>
-
-     ===== =====  CONTACTS  ===== ===== 
-    <section class='contacts center' id='contacts'>
-        <div class='contactsContainer'>
-            <div class='pageTitle center'>
-                <h1>contacts</h1>
-            </div>
-            <div class='contactIcons '>
-                <img class='imgIcons' src="./images/github.png" alt="GitHub">
-                <img class='imgIcons' src="./images/linkedin.png" alt="LinkedIn">
-                <img class='imgIcons' src="./images/resume.png" alt="Resume">
-            </div>
             <div class='emailForm'>
                 <form action="https://formspree.io/dannyshien@gmail.com" method="POST">
                     <div class='formName'>

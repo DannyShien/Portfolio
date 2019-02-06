@@ -105,9 +105,10 @@ h1 {
 }
 
 /* ===== =====  ABOUT ===== ===== */
-/* .section-about {
-    height: 100vh;
-} */
+.section-about {
+    /* height: 100vh; */
+    background-color: rgb(247, 247, 247);
+}
 .about-content {
     display: flex;
     margin: 0 30px;
@@ -155,19 +156,21 @@ h3 {
 
 
 /* ===== =====  CONTACT  ===== ===== */
-/* .section-contact {
+.section-contact {
     display: flex; 
     flex-direction: column;
-} */
-/* h3 {
+    align-items: center;
+}
+h3 {
     text-align: center; 
     font-size: 100%;
     font-weight: 400;
     margin-bottom: 20px; 
-}  */
+} 
 .contact-container {
     display: flex; 
     justify-content: space-evenly;
+    width: 63%;
     margin: 25px 0; 
 }
 .contact-container div {
@@ -177,7 +180,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    width: 10%;
+    width: 12%;
     margin: 20px auto; 
     padding: 5px;
     border-radius: 25%;
@@ -186,11 +189,11 @@ h3 {
 .icon-box img{
     /* background-color: white; */
     /* padding: 3px; */
-    width: 60px;
+    width: 40px;
     height: auto;
 }
 .icon-box p {
-    font-size: 80%;
+    font-size: 70%;
     font-weight: 400;
     margin-top: 5px; 
 }
@@ -200,7 +203,8 @@ h3 {
 }
 .icon-box:last-child img {
     width: auto;
-    height: 62px;
+    height: 40px;
+    margin-top: 3px; 
 }
 .email-form {
     display: flex; 
@@ -210,14 +214,14 @@ h3 {
 form {
     display: flex; 
     flex-direction: column;
-    align-items: center; 
+    /* align-items: center; Comment this out to remove centering */
     justify-content: space-around;
-    width: 70%;
+
 }
 .form {
     display: flex; 
     flex-wrap: wrap; 
-    width: 98%; 
+    padding: 3px; 
 }
 input[type=text],
 input[type=email] {
@@ -243,10 +247,10 @@ textarea {
     font-size: 80%;
 }
 input[type=submit] {
-    width: 20%;
-    height: 15%;
+    width: 23%;
+    height: 12%;
+    font-size: 85%;
     border: 2px solid black; 
     border-radius: 3px;
     background-color: aliceblue;
-
 }

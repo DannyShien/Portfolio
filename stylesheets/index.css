@@ -89,7 +89,16 @@ h1 {
 }
 .nav-link {
     display: flex;
+    justify-content: space-evenly;
+    /* background-color: white;  */
+    width: 40%;
+    height: auto; 
+}
+.nav-link li {
     margin-right: 10px; 
+    font-size: 100%;
+    font-weight: 400;
+
 }
 .hero-text {
     display: flex; 

@@ -176,44 +176,40 @@ h3 {
     font-weight: 400;
     margin-bottom: 20px; 
 } 
-.contact-container {
+.icon-container {
     display: flex; 
-    justify-content: space-evenly;
-    width: 63%;
-    margin: 25px 0; 
-}
-.contact-container div {
-    margin: 0;
+    flex-direction: column; 
+    width: 60%;
 }
 .icon-box {
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    width: 12%;
-    margin: 20px auto; 
-    padding: 5px;
-    border-radius: 25%;
-    border: 2px solid black;
+    justify-content: space-around;
 }
 .icon-box img{
-    /* background-color: white; */
-    /* padding: 3px; */
-    width: 40px;
-    height: auto;
+    width: 50px;
+    height: 40px;
+    /* border: 2px solid black; */
+    border-radius: 8px;
 }
-.icon-box p {
-    font-size: 70%;
-    font-weight: 400;
-    margin-top: 5px; 
+.icon-box img:last-child {
+    padding: 2px 0;
+
 }
-.icon-box:hover {
+.icon-box img:hover {
     transform: translateY(-2px);
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5); 
 }
-.icon-box:last-child img {
-    width: auto;
-    height: 40px;
-    margin-top: 3px; 
+.icon-text {
+    height: 30px; 
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 4px;
+}
+.icon-text p {
+    font-size: 80%;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 .email-form {
     display: flex; 

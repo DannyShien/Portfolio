@@ -64,7 +64,7 @@ p {
     font-weight: 400;
 }
 
-/*  ===== =====  HEADER  ===== ===== */
+/* ===== =====  HEADER  ===== ===== */
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/Dummyimage1.png);
     background-size: cover;
@@ -78,12 +78,9 @@ header {
     justify-content: space-between;
     align-items: center;
     align-items: baseline;
-
-    /* background-color: rgb(211, 211, 211, 0.7); */
-}
-h1 {
-    font-size: 120%;
-    font-weight: 400;
+    
+    /* background-color: rgba(66, 66, 66, 0.7); */
+    background-color: rgba(100, 100, 100, 0);
 }
 .name-title {
     margin-left: 15px; 
@@ -99,7 +96,10 @@ h1 {
     margin-right: 10px; 
     font-size: 100%;
     font-weight: 400;
-
+}
+h1 {
+    font-size: 120%;
+    font-weight: 400;
 }
 .hero-text {
     display: flex; 
@@ -111,9 +111,11 @@ h1 {
 }
 .hero-text h1 {
     font-size: 220%;
-    font-weight: 300; 
+    font-weight: 400; 
 }
-
+.hero-text p {
+    font-weight: 300;   
+}
 /* ===== =====  ABOUT ===== ===== */
 .section-about {
     /* height: 100vh; */
@@ -122,22 +124,35 @@ h1 {
 .about-content {
     display: flex;
     margin: 0 30px;
-    height: 400px;
+    height: auto;
 }
-/* .about-box:first-child {
-
-} */
-.about-box:last-child {
-    font-size: 70%;
-    line-height: 190%; 
-    word-spacing: 2px;
-    letter-spacing: 1px;
+.about-box:first-child {
     text-align: center; 
+    padding: 5px; 
+    flex: 1
+}
+.about-box:last-child {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    flex: 1;
+}
+.about-box:last-child p:first-child {
+    font-size: 150%;
+    font-weight: 700;
+    word-spacing: 1px;
+}
+.about-box:last-child p:last-child {
+    font-size: 96%;
+    line-height: 160%; 
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 .about-box img {
     max-width: 70%;
     height: auto;
-    /* border-radius: 25%; */
+    /* border-radius: 25px; */
 }
 
 /* ===== =====  RECENT-PROJECTS  ===== ===== */
@@ -179,25 +194,26 @@ h3 {
 } 
 .icon-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 60%;
 }
 .icon-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70px;
+    /* height: 70px; */
 }
 .icon-box a {
     border-bottom: none;
     padding: 0;
 }
 .icon-box img {
-    width: 55px;
-    height: 45px;
-    transition: all .2s;
+    width: 55px; 
+    height: auto;
+    transition: all .1s;
 }
 .icon-box:last-child img {
+    height: 58px;
     padding: 2px 0;
 }
 .icon-box img:hover {
@@ -205,7 +221,6 @@ h3 {
 }
 .icon-box .tooltiptext {
     visibility: hidden;
-    width: auto;
     background-color: rgb(0, 0, 0);
     color: #fff;
     font-size: 70%;
@@ -214,6 +229,8 @@ h3 {
     border-radius: 6px;
     padding: 3px 3px;
     z-index: 1;
+    transition: all .2s;
+
 }
 .icon-box:hover .tooltiptext {
   visibility: visible;
@@ -266,6 +283,7 @@ input[type=submit] {
     border: 2px solid black; 
     border-radius: 3px;
     background-color: aliceblue;
+    transition: all .2s;
 }
 input[type=submit]:hover {
     transform: translateY(-4px);

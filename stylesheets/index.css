@@ -156,27 +156,45 @@ h1 {
 }
 
 /* ===== =====  RECENT-PROJECTS  ===== ===== */
-/* .section-projects {
-
+.section-projects {
+    /* display: flex;  */
+    /* flex-wrap: wrap; */
 }
 .project-container {
     display: flex;
+    /* flex-direction: column; */
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .project-box {
-    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    flex: 1 0 auto;
+    margin: 10px 0;
+    width: 250px; 
+    height: 300px;
 }
 .project-box img {
-    width: 100%; 
+    width: 200px; 
     height: auto; 
 }
-h3 {
+.project-box h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
 
-} */
-
-/*  ===== =====  TECHNOLOGY  ===== ===== */
-/* .icon-container {
-    display: flex; 
+ /* ===== =====  TECHNOLOGY  ===== ===== */
+ /* .section-tech {
+     display: flex; 
+     flex-direction: column; 
+     align-items: center; 
+ }
+.icon-container {
+    background-color: aliceblue;
+    margin: 10px; 
 } */
 
 

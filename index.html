@@ -22,7 +22,7 @@
             </ul>
         </nav>
         <div class='hero-text'>
-            <h1>Welcome to my portfolio!</h1>
+            <h1>Welcome to my portfolio</h1>
             <p>Thanks for checking it out!</p>
         </div>
     </header>
@@ -83,29 +83,35 @@
         </div>
     </section> -->
 
-    <!-- <section class='section-projects' id='rp'>
+    <section class='section-projects' id='rp'>
         <div class='title'>
             <h2>Recent Projects</h2>
         </div>
-        <div class='project-container center'>
+        <div class='project-container '>
             <div class='project-box'>
-                <h3>AerolPlane</h3>
-                <img src="/images/AerolPlane.png" alt="AerolPlane">
+                <div>
+                    <img src="/images/AerolPlane.png" alt="AerolPlane">
+                    <h3>AerolPlane</h3>
+                </div>
             </div>
             <div class='project-box'>
-                <h3>GeoMindr</h3>
                 <img src="/images/GeoMindr.png" alt="GeoMinder">
+                <h3>GeoMindr</h3>
             </div>
             <div class='project-box'>
+                <img src="/images/ReactWeather.png" alt="React Weather">
                 <h3>React Weather</h3>
-                <img src="/images/" alt="React Weather">
             </div>
             <div class='project-box'>
-                <h3>BR'OCK</h3>
                 <img src="/images/AerolPlane.png" alt="BR'OCK">
+                <h3>BR'OCK</h3>
             </div>
+            <div class='project-box'>
+                    <img src="/images/AerolPlane.png" alt="BR'OCK">
+                    <h3>BR'OCK</h3>
+                </div>
         </div>
-    </section> -->
+    </section>
    
     <section class='section-contact' id='contact'>
         <div class='title'>
@@ -125,20 +131,12 @@
                 <a href="/images/Stanley Chen Resume.pdf" target='_blank'><img src="/images/file-download.svg" alt="Resume"></a>
                 <span class='tooltiptext'>Resume</span>
             </div>
-            <!-- <div class='icon-box'>
-                
-            </div>
-            <div class='icon-text'>
-                <p>GitHub</p>
-                <p>LinkedIn</p>
-                <p>Resume</p>
-            </div> -->
         </div>
         <div class='email-form'>
             <form action="https://formspree.io/dannyshien@gmail.com" method='POST'>
                 <div class='form'>
-                    <input type="text" name='name' placeholder="Name">
-                    <input type="email" name='email' placeholder='Email'>
+                    <input type="text" name='name' placeholder="Name" required>
+                    <input type="email" name='email' placeholder='Email' required>
                     <textarea name="message" placeholder='Message'></textarea>
                 </div>
                 <input type="submit" value='Send Message'>

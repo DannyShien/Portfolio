@@ -66,7 +66,7 @@ p {
 
 /* ===== =====  HEADER  ===== ===== */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(/images/Dummyimage1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(/images/TS.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -104,7 +104,7 @@ h1 {
 .hero-text {
     display: flex; 
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: ; */
     align-items: center; 
     color: white;
     height: 90%;
@@ -150,35 +150,50 @@ h1 {
     letter-spacing: 0.5px;
 }
 .about-box img {
-    max-width: 70%;
+    max-width: 30vw;
     height: auto;
     /* border-radius: 25px; */
 }
 
 /* ===== =====  RECENT-PROJECTS  ===== ===== */
 .section-projects {
-    /* display: flex;  */
-    /* flex-wrap: wrap; */
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
 }
 .project-container {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    width: 90vw;
+    height: auto;
+    padding-bottom: 10px;
+    /* outline: 2px solid orange; */
+}
+.project:hover, 
+.project:active {
+    border-bottom: none;
+    background-color: lanier-gradient(rgba(0, 0, 0, .8));
+}
+.container {
+    display: flex; 
+    justify-content: center;
+    margin-top: 10px; 
+    margin-left: 1px;
+    outline: 2px groove black;
+    background-color: rgb(247, 247, 247);
 }
 .project-box {
     display: flex; 
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    flex: 1 0 auto;
-    margin: 10px 0;
-    width: 250px; 
-    height: 300px;
+    padding: 10px 0;
+    height: 50vh;
+    width: 25vw;
+    /* background-color: aliceblue; */
 }
 .project-box img {
-    width: 200px; 
+    width: 25vw; 
     height: auto; 
 }
 .project-box h3 {

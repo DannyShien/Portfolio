@@ -14,7 +14,7 @@ html {
 /* ===== =====  RE-USABLE STYLING  ===== ===== */
 a:link, 
 a:visited {
-    color: white;
+    color:rgb(2, 150, 2);
     text-decoration: none;
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
@@ -22,8 +22,9 @@ a:visited {
 }
 a:hover, 
 a:active {
-    color: gray;
-    border-bottom: 2px solid gray;
+    /* color:rgb(2, 150, 2); */
+    color: rgb(0, 207, 0);
+    border-bottom: 2px solid rgb(0, 207, 0);
 }
 li {
     list-style-type: none;
@@ -66,7 +67,7 @@ p {
 
 /* ===== =====  HEADER  ===== ===== */
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(/images/TS.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(/images/code.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -78,7 +79,6 @@ header {
     justify-content: space-between;
     align-items: center;
     align-items: baseline;
-    
     /* background-color: rgba(66, 66, 66, 0.7); */
     background-color: rgba(100, 100, 100, 0);
 }
@@ -88,7 +88,7 @@ header {
 .nav-link {
     display: flex;
     justify-content: space-evenly;
-    /* background-color: white;  */
+
     width: 40%;
     height: auto; 
 }
@@ -104,14 +104,14 @@ h1 {
 .hero-text {
     display: flex; 
     flex-direction: column;
-    /* justify-content: ; */
+    justify-content: center;
     align-items: center; 
     color: white;
     height: 90%;
 }
 .hero-text h1 {
     font-size: 220%;
-    font-weight: 400; 
+    font-weight: 700; 
 }
 .hero-text p {
     font-weight: 300;   
@@ -171,11 +171,6 @@ h1 {
     padding-bottom: 10px;
     /* outline: 2px solid orange; */
 }
-.project:hover, 
-.project:active {
-    border-bottom: none;
-    background-color: lanier-gradient(rgba(0, 0, 0, .8));
-}
 .container {
     display: flex; 
     justify-content: center;
@@ -190,11 +185,21 @@ h1 {
     padding: 10px 0;
     height: 50vh;
     width: 25vw;
-    /* background-color: aliceblue; */
+}
+.project:link, 
+.project:visited {
+    transition: color 0.2s, background-color 0.2s;
+}
+.project:hover, 
+.project:active {
+    border-bottom: none;
+    color: rgb(0, 207, 0);
+    background-color: rgba(202, 202, 202, 0.8);
 }
 .project-box img {
     width: 25vw; 
     height: auto; 
+    padding: 10px; 
 }
 .project-box h3 {
     margin-top: 10px;
@@ -218,6 +223,7 @@ h1 {
     display: flex; 
     flex-direction: column;
     align-items: center;
+    background-color: rgb(247, 247, 247);
 }
 h3 {
     text-align: center; 
@@ -234,7 +240,6 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 70px; */
 }
 .icon-box a {
     border-bottom: none;
@@ -263,7 +268,6 @@ h3 {
     padding: 3px 3px;
     z-index: 1;
     transition: all .2s;
-
 }
 .icon-box:hover .tooltiptext {
   visibility: visible;
@@ -277,7 +281,6 @@ h3 {
 form {
     display: flex; 
     flex-direction: column;
-    /* align-items: center; Comment this out to remove centering */
     justify-content: space-around;
     padding: 3px;
     transition: all .2s;
@@ -315,12 +318,13 @@ input[type=submit] {
     font-size: 85%;
     border: 2px solid black; 
     border-radius: 3px;
-    background-color: aliceblue;
+    background-color: rgb(2, 150, 2);
     transition: all .2s;
 }
 input[type=submit]:hover {
     transform: translateY(-4px);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 177, 0);
 }
 input[type=submit]:active {
     transform: translateY(-1px);

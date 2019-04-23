@@ -22,8 +22,8 @@ a:visited {
 }
 a:hover, 
 a:active {
-    color: rgb(0, 207, 0);
-    border-bottom: 2px solid rgb(0, 207, 0);
+    color: rgb(0, 177, 0);
+    border-bottom: 2px solid rgb(0, 177, 0);
 }
 li {
     list-style-type: none;
@@ -166,7 +166,6 @@ h1 {
     overflow: hidden;
     width: 95vw;
     height: 90vh;
-    /* outline: 2px solid orange; */
 }
 .project-box {
     display: flex; 
@@ -174,6 +173,13 @@ h1 {
     justify-content: center;
     align-items: center;  
     margin: 3px; 
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    transition: 
+        opacity 0.5s,
+        flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+    outline: 1px solid black;
 }   
 .project-box h3 {
     color: transparent;
@@ -186,46 +192,11 @@ h1 {
     font-weight: 400;
     color: transparent;
 }   
-.box1 {
-    flex: 1;
-    background-image: linear-gradient(rgba(66, 66, 66, 0.2), rgba(66, 66, 66, 0.2)), url(/images/AerolPlane.png); 
-    background-size: cover;
-    background-position: center;
-    transition: 
-        opacity 0.5s,
-        flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
-    outline: 1px solid black;
-}
-.box2 {
-    flex: 1;
-    background-image: linear-gradient(rgba(66, 66, 66, 0.2), rgba(66, 66, 66, 0.2)), url(/images/AerolPlane.png);
-    background-size: cover;
-    background-position: center;
-    transition: 
-        opacity 0.5s,
-        flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
-    outline: 1px solid black;
-}
-.box3 {
-    flex: 1;
-    background-image: linear-gradient(rgba(66, 66, 66, 0.2), rgba(66, 66, 66, 0.2)), url(/images/AerolPlane.png);
-    background-size: cover;
-    background-position: center;
-    transition: 
-        opacity 0.5s,
-        flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
-    outline: 1px solid black;
-}
-.box4 {
-    flex: 1;
-    background-image: linear-gradient(rgba(66, 66, 66, 0.2), rgba(66, 66, 66, 0.2)), url(/images/AerolPlane.png);
-    background-size: cover;
-    background-position: center;
-    transition: 
-        opacity 0.5s,
-        flex 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11);
-    outline: 1px solid black;
-}
+.box1 {background-image: linear-gradient(rgba(66, 66, 66, 0.2), rgba(66, 66, 66, 0.2)), url(/images/AerolPlane.png); }
+.box2 {background-image: linear-gradient(rgba(66, 66, 66, 0.2), rgba(66, 66, 66, 0.2)), url(/images/AerolPlane.png);}
+.box3 {background-image: linear-gradient(rgba(66, 66, 66, 0.2), rgba(66, 66, 66, 0.2)), url(/images/AerolPlane.png);}
+.box4 {background-image: linear-gradient(rgba(66, 66, 66, 0.2), rgba(66, 66, 66, 0.2)), url(/images/AerolPlane.png);}
+
 .project-box:hover h3 {
     color: white;
     font-weight: 700;
@@ -236,35 +207,13 @@ h1 {
     font-weight: 700;
     font-size: 150%;
 }
-.box1:hover {
+.hover:hover {
     flex: 1.5;
     opacity: 0.6;
     background-image: none;
     background-color: gray;
     outline: 3px solid black; 
 }
-.box2:hover {
-    flex: 1.5;
-    opacity: 0.6;
-    background-image: none;
-    background-color: gray;
-    outline: 3px solid black;
-}
-.box3:hover {
-    flex: 1.5;
-    opacity: 0.6;
-    background-image: none;
-    background-color: gray;
-    outline: 3px solid black;
-}
-.box4:hover {
-    flex: 1.5;
-    opacity: 0.6;
-    background-image: none;
-    background-color: gray;
-    outline: 3px solid black;
-}
-
 
  /* ===== =====  TECHNOLOGY  ===== ===== */
  /* .section-tech {
@@ -299,7 +248,9 @@ h3 {
 .icon-box {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    /* outline: 1px solid orange; */
 }
 .icon-box a {
     border-bottom: none;
@@ -318,7 +269,6 @@ h3 {
     transform: scale(1.2, 1.2);
 }
 .icon-box .tooltiptext {
-    visibility: hidden;
     background-color: rgb(0, 0, 0);
     color: #fff;
     font-size: 70%;
@@ -328,9 +278,6 @@ h3 {
     padding: 3px 3px;
     z-index: 1;
     transition: all .2s;
-}
-.icon-box:hover .tooltiptext {
-  visibility: visible;
 }
 
 .email-form {
@@ -388,17 +335,5 @@ input[type=submit]:hover {
 }
 input[type=submit]:active {
     transform: translateY(1px);
-    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); */
 }
-
-
-
-
-
-
-
-
-
-
-
 
